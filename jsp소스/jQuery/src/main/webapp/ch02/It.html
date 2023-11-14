@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	table { width: 75%; }
+	.textstyle { color: blue; font-weight: bold;
+		background-color: pink; }
+</style>
+<script src="../js/jquery.js"></script></head><body>
+	<table>
+		<tr><td>영</td><td>일</td></tr>
+		<tr><td>이</td><td>삼</td></tr>
+		<tr><td>사</td><td>오</td></tr>
+	</table>
+	<button>클릭</button>
+<script>
+	$('button').click(function(){
+		$('td').addClass('textstyle');  // index 기준
+		$('td:lt(2)').removeClass('textstyle'); // less than
+		$('td:gt(4)').removeClass('textstyle'); // great than
+	});
+</script>
+</body>
+</html>

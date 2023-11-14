@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		for(let i = 0; i < 20; i++) {
+			$('<h2>무한 스크롤</h2>').appendTo('body');
+		}
+		$(window).scroll(function() {
+			let scrollHeight = $(window).scrollTop() +
+				$(window).height();
+			if (scrollHeight == $(document).height()) {
+				for(let i = 0; i < 20; i++) {
+					$('<h2>대박 사건</h2>').appendTo('body');
+				}
+			}
+		});
+	});
+</script></head><body>
+
+</body>
+</html>

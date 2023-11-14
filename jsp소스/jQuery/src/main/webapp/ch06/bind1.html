@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.reverse { background: green; color: white; }
+</style>
+<script src="../js/jquery.js"></script>
+</head><body>
+	<h1>오늘이 수당 신청하는 날</h1>
+	<h1>쭈아 !!</h1>
+<script>
+	//$('h1').bind({
+	$('h1').on({
+		click: function() {
+			$(this).html(function(index, item) {
+				return item+"+";});
+		}, mouseover: function() {
+			$(this).addClass('reverse');
+		}, mouseleave : function() {
+			$(this).removeClass('reverse');
+		}
+	});
+</script>
+</body>
+</html>

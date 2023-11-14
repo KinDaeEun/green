@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		.highlight_0 { background-color: palevioletred;}
+		.highlight_1 { background-color: orange;}
+		.highlight_2 { background-color: lightyellow;}
+		.highlight_3 { background-color: lightgreen;}
+		.highlight_4 { background-color: skyblue;}
+		.highlight_5 { background-color: darkblue;}
+		.highlight_6 { background-color: blueviolet;}
+	</style>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function() {
+			$('button').click(function() {
+				$('h5').addClass(function(index) {
+					return 'highlight_'+index;	
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h5>비오네</h5>	<!--index_0-->
+	<h5>비오네</h5>	<!--index_1-->
+	<h5>비오네</h5>	<!--index_2-->
+	<h5>비오네</h5>	<!--index_3-->
+	<h5>비오네</h5>	<!--index_4-->
+	<h5>비오네</h5>	<!--index_5-->
+	<h5>비오네</h5>	<!--index_6-->
+	<button>클릭</button>
+</body>
+
+</html>

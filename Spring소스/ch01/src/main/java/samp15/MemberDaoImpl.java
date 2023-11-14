@@ -1,0 +1,25 @@
+package samp15;
+import java.util.*;
+public class MemberDaoImpl implements MemberDao {
+	private Map<String, Member> map = 
+			new HashMap<String, Member>();
+	public Member select(String id) {
+		// map에서 데이터 읽기
+		return map.get(id);
+	}
+	public int insert(Member member) {
+		map.put(member.getId(), member);
+		return 1;		
+	}
+	public int update(Member member) {
+		map.put(member.getId(), member);
+		return 1;
+	}
+	public int delete(String id) {
+		map.remove(id);
+		return 1;
+	}
+	public Collection<Member> list() {
+		return map.values();
+	}
+}

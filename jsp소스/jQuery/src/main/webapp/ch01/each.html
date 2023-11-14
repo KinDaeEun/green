@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			let array = [
+				{name: '그린', link: 'http://greenart.co.kr'},
+				{name: '이전', link: 'http://daum.net'},
+				{name: '가글', link: 'http://google.com'},
+				{name: '네이놈', link: 'http://naver.com'}];
+			$.each(array, function (index, item) {
+				/* <a href='item.link'><h1>item.name</h1></a> */
+				let output = "<a href='" + item.link + "'><h1>" + item.name +
+					"</h1></a>";
+				document.body.innerHTML += output;
+			});
+		});	
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

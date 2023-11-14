@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			$('p em').css('background', 'yellow')
+				.each(function () {
+					$('.result1').append($(this).text() + "\n");
+				});
+			$('div > em').css('background', 'pink')
+				.each(function () {
+					$('.result2').append($(this).text() + "\n");
+				});
+			console.log('검색된 갯수 : '+$('p em').length);
+			console.log('검색된 갯수 : '+$('div > em').length);
+		})
+	</script>
+</head>
+
+<body>
+	<p>
+		<em>하나</em>
+		<em>둘</em>
+		<em>셋</em>
+	</p>
+	<div>
+		<em>넷</em>
+		<span>
+			<em>다섯</em>
+		</span>
+		<em>여섯</em>
+	</div>
+	<div>
+		<span>조상과 후손으로 검색된 엘리먼트 : </span>
+		<span class="result1"></span>
+	</div>
+	<div>
+		<span>조상과 자식으로 검색된 엘리먼트 : </span>
+		<span class="result2"></span>
+	</div>
+</body>
+
+</html>

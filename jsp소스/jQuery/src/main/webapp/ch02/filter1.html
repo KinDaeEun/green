@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head><body>
+	<h2>금요일</h2><h2>비오네</h2><h2>금요일</h2><h2>비오네</h2>
+	<h2>금요일</h2><h2>비오네</h2><h2>금요일</h2><h2>비오네</h2>
+	<button>클릭</button>
+<script>
+	$('button').click(function(){
+		/* $('h2:even').css({
+			'background':'blue', 'color':'white'
+		}); */
+		$('h2').filter(':even').css({
+			'background':'blue', 'color':'white'
+		});
+	});
+</script>
+</body>
+</html>

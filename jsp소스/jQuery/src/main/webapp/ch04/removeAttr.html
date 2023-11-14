@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+</head><body>
+	<button>스타일 제거</button>
+	<h2 style="color: red;">날씨가 </h2>
+	<h2 style="color: blue;">아직 여름이야 </h2>
+	<h2 style="color: green;">더워</h2>
+<script>
+	$('button').click(function() {
+		// 속성만 삭제
+		$('h2').removeAttr('style');
+	});
+</script>
+</body>
+</html>

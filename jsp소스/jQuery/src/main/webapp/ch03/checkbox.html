@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div { padding:5px; }
+	.item { float:left;  width: 100px; }
+</style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		// val()  : input, textarea, select
+		// text() : th, tr, span, div
+		$('#selectBtn').click(function() {
+			let checkList = "";
+			let checkedConsole = "";
+			$('input[name=hobby]:checkbox:checked').each(function() {
+				// checkbox 앞의 span태그에 있는 글자
+				checkList += $(this).prev().text()+" ";
+				// checkbox안의 value값
+				checkedConsole += $(this).val()+" ";
+			});
+			$('#content').html(checkList);
+			console.log(checkedConsole);
+		});
+	});
+</script></head><body>
+	<div><span class="item">음악감상</span><input 
+		type="checkbox" name="hobby" value="music"></div>
+	<div><span class="item">요가</span><input 
+		type="checkbox" name="hobby" value="yoga"></div>
+	<div><span class="item">독서</span><input 
+		type="checkbox" name="hobby" value="reading"></div>
+	<div><input type="button" id="selectBtn" value="취미선택"></div>
+	<div id="content"></div>
+</body>
+</html>

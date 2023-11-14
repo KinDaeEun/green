@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div { float: left; margin: 25px; }
+</style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		let fruits = ['사과','바나나','오렌지','멜론'];
+		let cars = ['벤츠', 'BMW', '아우디', '소나타']
+		$.each(fruits, function(index, item) {
+			//               pretend
+			$('#fruit_list').after('<li>'+item+'</li>');
+		});
+		$.each(cars, function(index, item) {
+			//                     pretendTo
+			$('<li>'+item+'</li>').insertAfter('#car_list');
+		});
+	});
+</script></head><body>
+	<div><b>좋아하는 과일 : </b><ul id="fruit_list"></ul></div>
+	<div><b>좋아하는 차 : </b><ul id="car_list"></ul></div>
+</body>
+</html>

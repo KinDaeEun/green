@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('button').click(function() {
+			// h2의 모든 text를 읽음
+			let txt = $('h2').text();
+			alert(txt);
+			// h2의 첫번째 data만 읽음
+			let html = ""; // $('h2').html();
+			$('h2').each(function() {
+				html += $(this).html();
+			});
+			alert(html);
+		});		
+	});
+</script></head><body>
+	<button>스타일 추가</button>
+	<h2>더위가 </h2><h2>한풀 </h2><h2>꺽이고 있네</h2>
+</body>
+</html>

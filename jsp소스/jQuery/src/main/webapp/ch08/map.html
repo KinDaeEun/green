@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="../js/jquery.js"></script>
+</head>
+
+<body>
+	<div></div>
+	<p></p>
+
+	<script>
+		let weeks = ["Sunday", "Monday", "Tuesday", "Wednesday",
+			"Thursday", "Friday", "Saturday"];
+		let wks = $.map(weeks, function (item, index) {
+			return item.substr(0, 3);	// 인덱스 0 부터 3 앞까지
+		});
+
+		$('div').text(weeks.join(', '));
+		$('p').text(wks.join(', '));
+	</script>
+</body>
+
+</html>

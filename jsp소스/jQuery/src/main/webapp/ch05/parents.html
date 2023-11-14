@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		let result = new Array();  // 배열 생성
+		// $('b').parent().each(function(index) { // 부모
+		$('b').parents().each(function(index) { // 조상
+			result[index] = this.tagName;
+		});
+		// 출력할 때 커마(,)와 한깐 떨어뜨리기
+		// $('b').append(result.join(', '));
+		// 배열 순서를 반대로
+		$('b').append(result.reverse().join(', '));
+	});
+</script></head><body>
+	<div><p><span><b>부모검색 : </b></span></p></div>
+</body>
+</html>

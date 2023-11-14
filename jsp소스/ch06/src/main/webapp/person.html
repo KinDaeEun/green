@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>@import url(common.css);</style>
+</head>
+<body>
+	<h2>개인 정보</h2>
+	<!--<form action="person1.jsp" >-->
+	<!--<form action="person2.jsp" >-->
+	<form action="person3.jsp" >
+		<table>
+			<tr>
+				<th>이름</th>
+				<td><input type="text" name="name" required autofocus></td>
+			</tr>
+			<tr>
+				<th>나이</th>
+				<td><input type="number" name="age" required autofocus></td>
+			</tr>
+			<tr>
+				<th>성별</th>
+				<td><label for="m">남자</label>
+					<input type="radio" name="gender" value="남자" required autofocus>
+					<label for="f">여자</label>
+					<input type="radio" name="gender" value="여자" required autofocus>
+				</td>
+			</tr>
+			<tr><th colspan="2"><input type="submit"></th></tr>
+		</table>
+	</form>
+</body>
+</html>

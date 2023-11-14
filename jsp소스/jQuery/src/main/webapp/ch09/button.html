@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<a href="#" data-icon="gear" class="ui-btn-left">설정</a>
+			<h1>버튼 만들기</h1>
+			<a href="#" data-icon="gear" class="ui-btn-right">설정</a>
+		</div>
+		<div data-role="content">
+			<a href="#" data-role="button">확인</a>
+			<a href="#" data-role="button" data-inline="true">취소</a>
+			<div data-role="controlgroup">
+				<a href="#" data-role="button">확인</a>
+				<a href="#" data-role="button">취소</a>
+			</div>
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#" data-role="button">확인</a>
+				<a href="#" data-role="button">취소</a>
+			</div>
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#" data-role="button" data-icon="forward">앞으로</a>
+				<a href="#" data-role="button" data-icon="back" data-iconpos="bottom">뒤로</a>
+				<a href="#" data-role="button" data-icon="refresh">새로고침</a>
+				<a href="#" data-role="button" data-icon="gear" data-iconpos="notext">앞으로</a>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="http://m.google.com" data-icon="grid" class="ui-btn-active">구글</a></li>
+					<li><a href="http://m.naver.com" data-icon="star" data-theme="b">네이버</a></li>
+					<li><a href="http://m.daum.net" data-theme="e" data-icon="home">다음</a></li>
+				</ul>
+			</div>
+		</div>
+</body>
+
+</html>

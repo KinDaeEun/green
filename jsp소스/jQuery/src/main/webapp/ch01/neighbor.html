@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		.textstyle {
+			font-size: 14pt;
+			line-height: 20pt;
+			margin: 10px;
+		}
+	</style>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			//	모든 태그의 class textstyle 을 추가한다는 의미
+			$('*').addClass('textstyle');
+			//	em tag 다음에 오는 a tag
+			$('em + a').css('background','yellow')
+			.each(function() {
+				$(this).appendTo('.result1');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!--
+	em, italic : 기울기
+	b,  strong ; 굵게
+	-->
+
+	<em>하나</em>
+	<a>둘</a>
+	<a>셋</a>
+	<a>넷</a>
+	<a>다섯</a>
+	<em>여섯</em>
+	
+	<div>
+		<span>prev + next 로 검색된 Element : </span>
+		<span class="result1"></span>
+	</div>
+</body>
+
+</html>

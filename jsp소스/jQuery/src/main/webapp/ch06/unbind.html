@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	img { width: 140px; height: 120px; }
+</style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		let num = 0;
+		$('img').bind('click', function() {
+		//	width(); 데이터 폭 읽기, width(값) 데이터의 폭 변경
+			num++;
+			$(this).width($(this).width()*1.2);
+			$(this).height($(this).height()*1.2);
+			if (num == 3) $(this).unbind(); // 연결 종료
+		});
+	});
+</script></head><body>
+	<img src="../images/im18.jpg">
+</body>
+</html>

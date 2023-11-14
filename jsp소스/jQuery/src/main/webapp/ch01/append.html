@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		.textstyle {font-size: 14pt;
+					line-height: 20pt;
+					margin: 10px;}
+	</style>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function() {		
+			// 모든 태그에 textstyle을 적용
+			$('*').addClass('textstyle');
+			$('button').click(function() {
+			// em + a em 태그 다음에 오는 a 태그 배경을 노랑
+				$('em + a').css('background','yellow').each(function() {
+					// 잘라서 클래스 result1에 붙여라
+					$(this).appendTo('.result1');
+				});
+			});
+		})
+	</script>
+</head>
+
+<body>
+	<div>
+		<em>하나</em>
+		<a>둘</a>
+		<a>둘</a>
+		<b>둘</b>
+		<a>다섯</a>
+		<em>여섯</em>
+	</div>
+	<hr>
+	<div>
+		<span>prev + next로 검색한 엘리먼트 : </span>
+		<span class="result1"></span>
+	</div>
+	<button>클릭</button>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('h2').click(function() {
+			$(this).html(function(index, item) {
+				return item+'+'; 
+			});	
+			setInterval(() => {
+				$('h2').last().trigger('click');
+			}, 500)				
+		});
+	});
+</script></head><body>
+	<h2>화요일</h2><h2>비오나</h2>
+</body>
+</html>

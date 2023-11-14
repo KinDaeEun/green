@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			let arr = [1, "two", 3, "four"];
+			//	inArray = 값이 있으면 해당하는 index	/	없으면 -1
+			$('span').eq(0).text($.inArray("one", arr));
+			$('span').eq(1).text($.inArray(2, arr));
+			$('span').eq(2).text($.inArray(3, arr));
+			$('span').eq(3).text($.inArray("four", arr));
+			$('span').eq(4).text($.inArray("four", arr, 4));
+		});
+	</script>
+</head>
+
+<body>
+	<div>"one" 검색결과 : <span></span></div>
+	<div>"2" 검색결과 : <span></span></div>
+	<div>"3" 검색결과 : <span></span></div>
+	<div>"four" 검색결과 : <span></span></div>
+	<div>"four" 검색결과 : <span></span></div>
+</body>
+
+</html>

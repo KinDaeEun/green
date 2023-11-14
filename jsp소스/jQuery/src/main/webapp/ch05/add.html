@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div { width: 60px; height: 60px; 
+		margin: 10px; float: left; }
+	p { clear: both; }
+	.redBorder { border: 2px solid red; }
+	.yellow { background-color: yellow; }
+</style>
+<script src="../js/jquery.js"></script>
+</head><body>
+	<button>클릭</button><br>
+	<div></div><div></div><div></div>
+	<p>yellow만 적용</p>
+<script>
+	$('button').click(function() {
+		// div태그에 redBorder class추가하고 p태그 추가하고 yellow 크래스 추가
+		$('div').addClass('redBorder').add('p').addClass('yellow');
+	});
+</script>
+</body>
+</html>

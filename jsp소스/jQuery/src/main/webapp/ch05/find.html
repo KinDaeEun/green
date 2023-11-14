@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		// p태그 안에 있는 em태그를 찾아
+		// $('p').find('em').css('color','red');
+		// p태그를 부모로 둔 em태그
+		// $('em','p').css('color','red');
+		// p태그의 후손 em
+		// $('p em').css('color','red');
+		// em태그와 p태그 모두 group
+		$('em, p').css('color','red');
+	});
+</script></head><body>
+	<div>p엘리먼트 중에서 <em>이탤릭단어의 </em></div>
+	<p>글자색을 <em>빨강색으로 </em>변경한다</p>
+</body>
+</html>

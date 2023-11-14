@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		let fruit = ['산딸기','판딸기','죽은딸기','알카리딸기'];
+		$.each(fruit, function(index) {
+			// $('ul').append('<li>'+fruit[index]+"</li>");
+			// $('ul').prepend('<li>'+fruit[index]+"</li>");
+			// before = append와 같이 뒤에
+			// $('ul').before('<li>'+fruit[index]+"</li>");
+			// after = prepend 앞에
+			// $('ul').after('<li>'+fruit[index]+"</li>");
+			// $('<li>'+fruit[index]+"</li>").appendTo('ul');
+			// $('<li>'+fruit[index]+"</li>").prependTo('ul');
+			// $('<li>'+fruit[index]+"</li>").insertBefore('ul');
+			$('<li>'+fruit[index]+"</li>").insertAfter('ul');
+		});
+	});
+</script></head><body>
+	<ul></ul>
+</body>
+</html>

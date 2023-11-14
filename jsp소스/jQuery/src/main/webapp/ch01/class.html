@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			// group
+			$('h2, p').css('background', 'yellow');
+			// id가 a1
+			$('#a1').css('color', 'red');
+			// p태그에 포함된 id가 a2
+			$('p#a2').css('background', 'cyan');
+			// 클래스가 c1
+			$('.c1').css('color', 'blue');
+			// p태그에 포함된 c1
+			$('p.c1').css('background', 'pink');
+		});	
+	</script>
+</head>
+
+<body>
+	<h2>대박사건</h2>
+	<p>날씨가 좋아지나</p>
+	<h2 id="a1">대박사건</h2>
+	<p>날씨가 좋아지나</p>
+	<h2 class="c1">대박사건</h2>
+	<p id="a2">날씨가 좋아지나</p>
+	<h2 class="c1">대박사건</h2>
+	<p class="c1">날씨가 좋아지나</p>
+</body>
+
+</html>

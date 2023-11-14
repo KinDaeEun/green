@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			let list = ['제니', '로제', '뷔', '은우', '하니'];
+			$.each(list, function(index, item) {
+				$('ol').append('<li>' + item + '</li>');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<ol></ol>
+</body>
+
+</html>

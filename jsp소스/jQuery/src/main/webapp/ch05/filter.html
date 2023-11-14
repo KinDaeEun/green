@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div { width: 60px; height: 60px; margin: 5px;
+		float: left; border: 2px solid white; }
+</style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('button').click(function() {
+			$('div').css('background', 'yellow')
+				.filter('.middle').css('border-color','red');
+		});
+	});
+</script></head><body>
+	<button>클릭</button>
+	<div id="first"></div>
+	<div id="second" class="middle"></div>
+	<div id="third" class="middle"></div>
+	<div id="fourth" class="middle"></div>
+	<div id="fifth"></div>
+</body>
+</html>

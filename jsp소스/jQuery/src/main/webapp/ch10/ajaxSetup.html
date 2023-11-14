@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			$('#submit').click(function () {
+				//let sendData = "name=" + $('#name').val() +
+				//	"&pass=" + $('#pass').val();
+				let sendData = $('form').serialize();
+				$.ajaxSetup({
+					type: 'post', url: 'loginChk.jsp',
+					dataType: 'text', success: function (data) {
+						$('#msg').html(data);
+					}
+				});
+				$.ajax({data: sendData});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>권한 체크</legend>
+			이름 : <input type="text" name="name" id="name">
+			<p></p>
+			암호 : <input type="password" name="pass" id="pass">
+			<p></p>
+			<input type="button" value="전송" id="submit">
+		</fieldset>
+	</form>
+	<div id="msg"></div>
+</body>
+
+</html>

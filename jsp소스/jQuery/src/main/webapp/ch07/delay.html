@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Delay</title>
+	<style>
+		div { width: 100px; height: 100px; background: green; position: relative; }
+	</style>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			$('div').each(function(index) {
+				//	index * 500 => -0, 500, 1000, 1500, 2000, 2500
+				$(this).delay(index*500).animate({left:500},'slow');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+
+</html>

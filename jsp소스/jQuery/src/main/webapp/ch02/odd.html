@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+	$(function() {
+		$('button').click(function() {
+			$('tr:odd').css('background','yellow');
+			$('tr:even').css('background','pink');
+		});
+	});
+</script></head><body>
+<table border="1">
+	<tr><td>one</td></tr>	<tr><td>two</td></tr>
+	<tr><td>three</td></tr>	<tr><td>four</td></tr>
+	<tr><td>five</td></tr>	<tr><td>six</td></tr>
+</table>
+<button>클릭</button>
+</body>
+</html>

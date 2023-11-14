@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		div,
+		span {
+			margin: 30px;
+		}
+	</style>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			$('div em').css('border', '3pt solid red')
+				.css('padding', '7pt').css('margin', '7pt');
+			$('span em').css('border', '1pt dotted blue')
+				.css('padding', '7pt');
+		});
+	</script>
+</head>
+
+<body>
+	<div>
+		<em>Hello</em>
+		<em>jQuery</em>
+		<em>forever</em>
+	</div>
+	<span>
+		<em>Hello</em>
+		<em>jQuery</em>
+		<em>forever</em>
+	</span>
+</body>
+
+</html>

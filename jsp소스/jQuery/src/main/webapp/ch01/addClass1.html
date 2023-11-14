@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		.highlight {
+			background-color: yellow;
+		}
+	</style>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(function () {
+			$('button').click(function () {
+				$('h1, h2').addClass('highlight');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h1>대박</h1>
+	<h2 class="a1">비오네</h2>
+	<h1>대박</h1>
+	<h2 class="a1">비오네</h2>
+	<h1>대박</h1>
+	<h2 class="a1">비오네</h2>
+	<button>클릭</button>
+</body>
+
+</html>

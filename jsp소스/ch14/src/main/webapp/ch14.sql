@@ -1,0 +1,1 @@
+select * from board1 where num= num desc;

@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	p { margin: 4px; font-size: 20px; font-weight: bold; }
+	.red { color: red; }
+	.blue { color: white; background-color: blue; }
+	.under { text-decoration: underline; }
+	.hightlight { background-color: yellow; }
+</style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('p').addClass('red under');
+		$('#removeClass').click(function() {
+			$('p:even').removeClass('red under');
+		});
+		$('#addClass').click(function() {
+			$('p:odd').removeClass('red under').addClass('hightlight');
+		});
+		$('#toggle').click(function() {
+			$('p:even').toggleClass('blue');
+		});
+	});
+</script></head><body>
+	<button id="removeClass">클래스 삭제</button>
+	<button id="addClass">클래스 추가</button>
+	<button id="toggle">클래스 토글</button>
+	<p>에리먼트로 부터</p><p>클래스를 </p><p>추가하고 </p>
+	<p>제거하는 </p><p>연습</p>
+</body>
+</html>

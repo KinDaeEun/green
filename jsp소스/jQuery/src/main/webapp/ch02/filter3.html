@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+</head><body>
+	<h2>금요일</h2><h2>비오네</h2><h2>금요일</h2><h2>비오네</h2>
+	<h2>금요일</h2><h2>비오네</h2><h2>금요일</h2><h2>비오네</h2>
+	<button>클릭</button>
+<script>
+	$('button').click(function() {
+		$('h2').css('background','orange').filter(':even')
+			.css('color','red');
+	});
+</script>
+</body>
+</html>

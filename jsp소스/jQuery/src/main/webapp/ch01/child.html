@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="../js/jquery.js"></script>
+	<script>
+	$(function () {
+		//	ul > li : 자식
+		//	ul li : 후손
+		$('ul > li').css('color', 'red')
+	})
+	</script>
+</head>
+
+<body>
+		<!-- 
+			ul : unordered list 순서 없음
+			ol : ordered list 순서 있음
+		-->
+	<div>
+		<ul>
+			<li>사과</li>
+			<li>포도</li>
+			<li>바나나</li>
+		</ul>
+	</div>
+</body>
+
+</html>

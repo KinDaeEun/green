@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		// chain방식 : 조건을 하나씩 추가
+		$('div span:first-child, div span:last-child')
+			.css('text-decoration','underline')
+			.css('color','red')
+			.css('font-size','20pt');
+	});
+</script></head><body>
+	<div>
+		<span>대박</span><span>쪽박</span><span>옹박</span>
+		<span>허걱</span><span>허각</span><span>헐~</span>
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('#my_form').submit(function() {
+			let name = $('#name').val();
+			let password = $('#password').val();
+			alert(name+" : "+password);
+			return false;
+		});
+	});
+</script></head><body>
+action이 없으면 submit하면 현재 페이지	
+<form id="my_form">
+<table>
+	<tr><td>이름</td><td><input type="text" name="name" 
+		id="name"></td></tr>
+	<tr><td>암호</td><td><input type="password" name="password" 
+		id="password"></td></tr>
+	<tr><th colspan="2"><input type="submit"></th></tr>
+</table>
+</form>
+</body>
+</html>

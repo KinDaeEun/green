@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('button').click(function() {
+			$('img').each(function(index) {
+				$(this).attr({
+					src:'../images/im'+index+".jpg",
+					width:'200px',height:'200px'
+				});
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<button>이미지 보기</button><p></p>
+	<img><img><img>
+</body>
+</html>

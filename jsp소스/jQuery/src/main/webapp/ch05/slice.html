@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div { width: 60px; height: 60px; margin: 5px; 
+		float: left; border: 2px solid blue;	}
+</style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('button').click(function() {
+			// 인덱스가 2부터 3앞까지 즉 인덱스 2
+			$('div').slice(2, 3).css('background', 'yellow');
+			// 인덱스 4부터 끝까지
+			$('div').slice(4).css('background', 'pink');
+		});		
+	});
+</script></head><body>
+	<button>클릭</button><br>
+	<div></div><div></div><div></div>
+	<div></div><div></div><div></div>
+</body>
+</html>

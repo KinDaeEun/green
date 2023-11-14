@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	table { table-layout: auto; width: 75%; }
+	tr { color: blue; font-weight: bold;  }
+	.selectedstyle { color: red; font-size: 20pt; 
+		background-color: pink; }
+</style>
+<script src="../js/jquery.js"></script></head><body>
+<table border="1">
+	<tr><td>one</td></tr>	<tr><td>two</td></tr>
+	<tr><td>three</td></tr>	<tr><td>four</td></tr>
+	<tr><td>five</td></tr>	<tr><td>six</td></tr>
+</table>
+<script>
+	$('tr:first').addClass('selectedstyle');
+	$('tr:last').addClass('selectedstyle');
+	// 데이터를 읽을 때 : html() 태그포함, text() 값
+	console.log("조건에 맞는 문장 : "+$('tr:first').html());
+	console.log("조건에 맞는 문장 : "+$('tr:last').text());
+</script>
+</body>
+</html>

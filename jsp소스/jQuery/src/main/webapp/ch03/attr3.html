@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style></style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('#regBtn').click(function() {
+			if ($('#userId').val() == "") {
+				alert("아이디를 입력하세요"); 
+				$('#userId').focus(); return;
+			}
+			if (!$('#userName').val()) {
+				alert("이름을 입력하세요"); 
+				$('#userName').focus(); return;
+			}
+			if ($('#pwd').val() == "") {
+				alert("암호를 입력하세요"); 
+				$('#pwd').focus(); return;
+			}
+			if (!$('#pwdConfirm').val()) {
+				alert("암호확인을 입력하세요"); 
+				$('#pwdConfirm').focus(); return;
+			}
+			if ($('#pwd').val() != $('#pwdConfirm').val()) {
+				alert('암호와 암호확인이 다릅니다'); return;
+			}
+			alert("회원 가입을 축하합니다");
+		});
+		$('#resetBtn').click(function() {
+			// val()는 데이터 읽기
+			// val("")는 데이터 지우기
+			// val("kk")는 kk로 값 채우기
+			$('#userId').val("초기화");
+			$('#userName').val("");
+			$('#pwd').val("");
+			$('#pwdConfirm').val("");
+		});
+	});
+</script></head><body>
+	<div align="center">
+		<div><span class="item">아이디</span>
+			<input type="text" id="userId"></div>
+		<div><span class="item">이름</span>
+			<input type="text" id="userName"></div>
+		<div><span class="item">암호</span>
+			<input type="password" id="pwd"></div>
+		<div><span class="item">암호확인</span>
+			<input type="password" id="pwdConfirm"></div>
+		<div><input type="button" id="regBtn" value="회원가입"></div>
+		<div><input type="button" id="resetBtn" value="초기화"></div>
+	</div>
+</body>
+</html>

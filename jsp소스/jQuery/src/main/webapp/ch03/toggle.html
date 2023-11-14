@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	p { margin: 4px; font-size: 16px; 
+		font-weight: bold; cursor: pointer; }
+	.blue { color: blue; }
+</style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('p').click(function() {
+			// toggleClass는 addClass와 removeClass를 반복
+			$(this).toggleClass('blue');
+		});
+	});
+</script>
+</head>
+<body>
+	<p class="blue">엘리먼트에 적용된 클래스를</p>
+	<p>추가하고 제거하기 반복</p>
+</body>
+</html>

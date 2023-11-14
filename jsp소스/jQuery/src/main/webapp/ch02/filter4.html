@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+$(function() {
+	$('button').click(function() {
+		/* $('h2').css('background','orange');
+		$('h2:even').css('color','red');
+		$('h2:odd').css('color','blue'); */
+		// end() 짝수를 뽑아서 빨강색 작업 종료후에 다시 
+		// end()가 없으면 짝수 중에서 
+		$('h2').css('background','orange')
+			.filter(':even').css('color','red').end()
+			.filter(':odd').css('color','blue');
+	});
+});	
+</script>
+</head><body>
+	<h2>금요일</h2><h2>비오네</h2><h2>금요일</h2><h2>비오네</h2>
+	<h2>금요일</h2><h2>비오네</h2><h2>금요일</h2><h2>비오네</h2>
+	<button>클릭</button>
+</body>
+</html>

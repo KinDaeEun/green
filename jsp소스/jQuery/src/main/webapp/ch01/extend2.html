@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		let obj = {}; // 객체 생성
+		obj.name = "제니";
+		$.extend(obj, {
+			gender:"여자",
+			part:"뮤직"
+		});		
+		let output = "";
+		$.each(obj, function(key, item) {
+			output += key+" : "+item+"\n";
+		});
+		alert(output);
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

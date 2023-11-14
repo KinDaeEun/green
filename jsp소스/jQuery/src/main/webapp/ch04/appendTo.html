@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('img').css('width', 250);
+		// 2초에 한번씩 첫번째 이미자를 잘라서 body뒤 쪽에 붙여라
+		setInterval(() => {
+			$('img').first().appendTo('body');
+		}, 2000);
+	});
+</script></head><body>
+	<img src="../images/Chrysanthemum.jpg">
+	<img src="../images/Desert.jpg">
+	<img src="../images/Hydrangeas.jpg">
+	<img src="../images/Jellyfish.jpg">
+	<img src="../images/Koala.jpg">
+</body>
+</html>

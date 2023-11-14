@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	* { margin: 0px; padding: 0px; border: 3px solid green; }
+</style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('a').click(function(event) {
+			$(this).css('background', 'blue');
+			// event.stopPropagation(); // 이벤트 전달 금지
+			// event.preventDefault();  // 원래 기능(a태그) 작동 금지
+			return false;
+		});
+		$('h1').click(function() {
+			$(this).css('background', 'red');
+		});
+	});
+</script></head><body>
+	<h1><a href="http://www.naver.com">네이버</a></h1>
+</body>
+</html>

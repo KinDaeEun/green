@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('button').click(function() {
+			// 하나만 매개변수 index
+			// 매개변수가 두개면 index, item(value)
+			$('h2').html(function(index, item) {
+				return '👍😊👍😊'+item+'👍😊👍😊';
+			});
+		});
+	});
+</script></head><body>
+	<button>클릭</button>
+	<h2>더위가 </h2><h2>한풀 </h2><h2>꺽이고 있네</h2>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		@import url(common.css);
+	</style>
+	<script>
+		function chk() {
+			if (frm.password.value != frm.confirmPass.value) {
+				alert("암호와 암호 확인 다릅니다");
+				frm.password.focus();
+				frm.password.value = "";
+				frm.confirmPass.value = "";
+				return false;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form action="Member" method="post" onsubmit="return chk()" name="frm">
+		<table border="1">
+			<caption>회원가입</caption>
+			<tr>
+				<th>이름</th>
+				<td><input type="text" name="name" required autofocus></td>
+			</tr>
+			<tr>
+				<th>아이디</th>
+				<td><input type="text" name="id" required></td>
+			</tr>
+			<tr>
+				<th>암호</th>
+				<td><input type="password" name="password" required></td>
+			</tr>
+			<tr>
+				<th>암호확인</th>
+				<td><input type="password" name="confirmPass" required></td>
+			</tr>
+			<tr>
+				<th>성별</th>
+				<td><label for="m">남자</label>
+					<input type="radio" name="gender" checked id="m" value="남자">
+					<label for="f">여자</label><input type="radio" name="gender" id="f" value="여자">
+				</td>
+			</tr>
+			<tr>
+				<th>메일 수신여부</th>
+				<td>
+					<label for="e1">공지</label><input type="checkbox" name="email" id="e1" value="공지">
+					<label for="e2">광고</label><input type="checkbox" name="email" id="e2" value="광고">
+					<label for="e3">배송</label><input type="checkbox" name="email" id="e3" value="배송">
+				</td>
+			</tr>
+			<tr>
+				<th>취미</th>
+				<td><select name="hobby" multiple size="5">
+						<option>침뱉기</option>
+						<option>졸기</option>
+						<option>자기</option>
+						<option>눕기</option>
+						<option>울기</option>
+					</select></td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<input type="submit"><input type="reset">
+				</th>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

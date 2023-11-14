@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.red { color: red; }
+</style>
+<script src="../js/jquery.js"></script>
+</head><body>
+	<button>버튼</button>
+	<div id="m1"></div><div id="m2"></div>
+<script>
+	$('button').click(function() {
+		$('#m1').html('<span class="red">점심시간</span>');
+		$('#m2').text('<span class="red">점심시간</span>');
+	});
+</script>
+</body>
+</html>

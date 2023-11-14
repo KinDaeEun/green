@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('button').click(function() {
+			$('input:checked+span')
+				.css('background','yellow');
+			$('input:not(:checked)+span')
+				.css('background','pink');
+		});
+	});
+</script></head><body>
+<div><input type="checkbox" name="fruit"><span>사과</span></div>
+<div><input type="checkbox" name="fruit"><span>바나나</span></div>
+<div><input type="checkbox" name="fruit"
+	checked><span>복숭아</span></div>
+<button>클릭</button>
+</body>
+</html>

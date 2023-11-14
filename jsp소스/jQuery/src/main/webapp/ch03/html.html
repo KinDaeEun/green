@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	p { margin: 14px; cursor: pointer; }
+	b { text-decoration: underline; }
+	button { font-size: 20px; color: blue; 
+		font-weight: bold; }
+</style>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('p').click(function() {
+			// html() html형식을 포함하여 읽어라, text()는 html형식 제외하고 읽기
+			let str = $(this).text();    // .html(); 
+			// html("문자열") html형식으로 출력하라, text(문자열) 문자열 그대로
+			$('#console').text(str);   // html(str);
+		});
+	});
+</script></head><body>
+<p><b>html()는 </b>엘리먼트의 <span id="text">내용을</span></p>
+<p>html형식의 <span id="text">문장열로 </span>리턴한다</p>
+<p>버튼을 포함한 <button name="okbtn">button</button>문장이다</p>
+<div id="console"></div>
+</body>
+</html>
