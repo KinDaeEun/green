@@ -1,0 +1,46 @@
+휴에이션
+CRUD(create, retrieve, update, delete)
+         insert   select       "           "
+
+씨앤비플러스
+
+에이전시프로
+
+아이티파트너스
+1. Collection
+   갯수 제한이 없음, Generic사용하지 않으면 데이터형도 제한 없음
+   List : 인덱스 + 값 - ArrayList, Vector, LinkedList
+   Set : 값, 중복금지 -HashSet, TreeSet
+% Map - 키, 값 구성 - HashMap, Hashtable, Properties
+2. Interface
+    1) 변수는 public static final이 생략
+        모두가 객체를 생성하지 않고 바로 사용가능
+         값을 변경 못함
+    2) method public abstract
+        선언부는 있지만 구현부는 없음
+        클래스에서 overring하여 사용
+    3) java1.8부터 static/default는 구현부가 있음
+    4) 클래스가 각각의 메서드를 재정의하여 사용
+        다형성 구현, 결합도를 느슨하게 하여 upgrade용이
+    5) 양식같은 효과 : 다형성구현
+    6) 다중 상속을 지원
+3. Collection
+    List - 인덱스와 값으로 구성
+           ArrayList : 가장 많이 사용 속도가 빠름 
+           Vector : 동기화 지원
+           LinkedList : 데이터 순서가 불규칙하게 입력/수정/삭제가 발생하는 경우
+     Set - 값으로만 구성, 중복 금지
+             HashSet - 값
+             TreeSet - 값을 크기 순서로 정열
+4. 쿠키/세션 : 로그인 정보를 저장
+   쿠키 : client
+   세션 : client에는  session Id, 정보는 서번에 저장
+
+현대 IT&E
+
+노스스타컨설팅
+1. join : 두개 이상의 테이블에서 값을 조회
+2. DDL, DML, DML
+
+   
+

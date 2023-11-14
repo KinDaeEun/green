@@ -1,0 +1,41 @@
+public class Sum3 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자를 입력하세요");
+		int num = sc.nextInt();
+		int sum = f1(num);  // sum 합계		// 10으로 나누어서 나머지 들의 합		
+		System.out.println("자리수 합 : "+sum);
+		sc.close();
+	}
+	private static int f1(int num) {
+		int sum = 0;
+		while(true) {
+			sum += num % 10; // 386 % 10 => 6, 38 % 10 => 8 3 
+			num = num / 10;  // 38 3
+			if (num == 0) break;
+		}
+		return sum;
+	}
+}
+
+1. 프로그램
+    데이터 + 프로그램(로직) => 답
+2. AI
+   데이터 + 답 => 로직 Machine Learning
+   y = ax + b
+
+int[] arr = new int[5];
+List<String> list = new ArrayList<String>();
+
+Car move()
+ FireEngine, Bus, Taxi, Truck
+Car[] cars = {new FireEngine(),New Bus(),
+   new Taxi(), new Truck() };
+for(Car car : cars) {
+    car.move()
+}
+ 
+
+
+
+

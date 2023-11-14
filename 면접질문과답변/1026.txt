@@ -1,0 +1,73 @@
+누리앱
+1. 스프링 게시판 : 3일
+   - 공지사항
+
+소프트이십오
+
+로고스시스템 
+1. 입금/출금 단식부기
+2. 복식부기 => 회계(account)
+ 회사돈     줄돈
+   자산 = 부채 + 자본(투자)
+ 차변   =  대변
+
+%. 솔루션
+  1) 고유의 기술
+  2) 업무에 기술과 시스템
+
+코요코
+1. join : 두개 이상의 테이블 컬럼을 조회
+   - inner join : pk=fk가 일치하는 자료만 조회
+   - outer join : 한쪽에 데이터 더 많은 것을 포함하여 조회
+2. 로그인 정보를 저장
+  - session : server, client에는 session id를 저장,백화점카드
+  - cookie : client, 쿠폰
+
+오늘앤 파트너스
+1. 자리수 합계
+    386 = 3+8+6=> 17
+    1234 = 1+2+3+4 => 10
+  public class Sum3 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자를 입력하세요");
+		int num = sc.nextInt();
+		int sum = 0;  // sum 합계		// 10으로 나누어서 나머지 들의 합
+		while(true) {
+			sum += num % 10; // 386 % 10 => 6, 38 % 10 => 8 3 
+			num = num / 10;  // 38 3
+			if (num == 0) break;
+		}
+		System.out.println("자리수 합 : "+sum);
+		sc.close();
+	}
+}
+
+	public static void main(String[] args) {
+		String[] A1 = {"A", "B", "C", "D", "E"}; // A는 B보다 길이가 크거나 같다.
+		String[] B1 = {"X", "Y"};                // A는 인덱스 짝수에 B는 인덱스 홀수에 채워서 C작성
+//		C = {"A", "X", "B", "Y", "C", "X", "D", "Y", "E", "X"}		
+		String[] A2 = {"A", "B", "C", "D"};
+		String[] B2 = {"X", "Y", "Z"};
+//		C = {"A", "X", "B", "Y", "C", "Z", "D", "X"}
+		String[] C1 = arr(A1, B1);
+		System.out.println(Arrays.toString(C1));
+		String[] C2 = arr(A2, B2);
+		System.out.println(Arrays.toString(C2));
+	}
+
+배열 합치기
+	private static String[] arr(String[] a1, String[] b1) {
+		String[] c = new String[a1.length * 2];
+		int k = 0;
+		for(int  i= 0; i < a1.length; i++) {
+			c[i*2] = a1[i];
+			k = i % b1.length;
+			c[i*2 + 1] = b1[k];
+		}
+		return c;
+	}
+}
+
+          
+ 

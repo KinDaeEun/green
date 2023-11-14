@@ -1,0 +1,82 @@
+유투바이오
+ 1. private : 같은 클래스 내에서만 사용 가능
+                 멤버변수, 메서드
+     default : 같은 클래스/패키지
+     protected : 같은 클래스, 같은 패키지, 상속
+     public : 모두
+2. extends : 상속, 클래스 부모의 메서드와 변수
+    implements : 구현, interface 
+        변수는 public static final
+         메서드 public abstract
+3. abstract : 매개변수, 메서드가 있는 데
+       메서드 중에 하나 이상의 추상메서드 있음
+    interface 변수는 public static final
+         메서드 public abstract
+                   선언부는 있지만 구현부가 없음
+         java 1.8부터 default/static메서드는 
+            구현부가 있음
+4. String 참조형이지만 기본형 처럼 사용 가능
+   1) 참조형 String str = new String("값");
+   2) 기본형 String str2  = "값";
+        intern() 메서드를 사용해서 기본형처럼
+5. DDL 데이터 정의어 create,drop,alter,truncate
+    DML 데이터 조작어
+        insert, update, delete, select
+    DCL 데이터 제어어
+         grant, revoke, TCL(commit, rollback)
+6. delete : delete from table명 where 조건
+          조건에 맞는 데이터 만 삭제
+          조건이 없으면 모두 삭제
+           rollback으로 복구 가능
+   truncate : truncate table table명
+         모든 데이터 삭제
+          rollback으로 복구 불가능
+7. multi thread
+ 1)  process는 실행하려는 프로그램으로 메모리
+    thread는 process내의 일의 단위
+ - 하나의 cpu안에서 동시에 여러 thread가 작업
+ - 처리 속도가 빠름
+  - run()메서드를 재정의
+  - 단점 : dead lock이 걸릴 수 있으로
+    syncronized를 통하여 방지
+ 2) Runnable interface
+     multi thread를 구현하려면 Thread를 상속
+     java는 다중 상속이 금지
+      다른 클래스를 상속받아서 Thread상속이 곤란할 때 interface Runnable를 구현하여 multi thrad를 작업을 수행
+8. jsp사용
+   - 화면을 구현했고 jstl을 사용하여 로직처리
+9. spring
+   DI : 의존성 주입,결합도를 느슨, upgrade용이
+   AOP : 관점지향 프로그램밍
+       공통업무(보안, 로깅, 트랜잭션)를 처리
+        일반개발자는 업무에만 전념
+10. controller
+    web으로 부터 요청받은 것을 확인하여 model(service)를 연결하여 비즈니스로직처리
+    결과를 받아서 jsp를 통하여 화면전달
+11. jsp에서 paging query
+    1) mysql : limit사용
+        select * from table order by 컬럼 desc
+           limit 인덱스, 갯수
+    2) oracle : topN으로 처리
+    select * from (select rownum rn, a.* from
+      (select * from table order by 컬럼 desc)a)
+        where rn between 시작번호 and 끝번호
+12. stack : 데이터 주소
+     heap : 실제 데이터 대입 
+13. overloading 같은 클래스 사용
+       - 매개변수의 갯수가 다르거나 데이터형이 다르게 사용
+       - 메서드, 생성자
+     overriding 부모/자식간 상속, 재정의
+       - 매개변수의 갯수와 데이터형이 일치
+       - 접근지정자는 범위가 부모보다 같거나 큼
+       - 다형성
+14. 네트워크 계정
+15. static 정적
+     - 메서드나 변수에 사용
+     - 객체를 생성하지 않고 클래스명.변수 또는
+                  클래스명.메서드명으로 사용 가능
+16. ajax 
+     html은 화면단위로 처리하는데 
+     ajax는 화면 일반만 처리하여 변경 가능
+
+파로스 아이

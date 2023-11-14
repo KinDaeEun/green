@@ -1,0 +1,34 @@
+이젠 솔루션
+9. security : 암호
+   권한 : A, B, C
+12. spring framework
+    1) 전자정부 표준
+    2) DI(Ioc) + AOP
+        DI(의존성 주입) : 결합도를 느현 upgrade용이
+        AOP(관점지향프로그램밍) : 공통관점
+           보안, 로깅, 트랜잭션 등 - 공통팀
+           개발자는 업무로직 개발에 전념
+
+이에프지
+아이티키
+1. private     같은 클래스  : 메서드/멤버변수
+   default     같은 클래스/패키지
+   protected    "              ", 다른 패키지지만 상속
+   public        모두
+
+하이퍼 테크
+1. MRP (Material Requirement Planning) 
+ MRP II (Manufaturing Resouces " )
+ ERP (Enterprise Resources ")
+ Customerizing 
+OutSourcing 
+2. DDL Data defainition Language 정의어
+          create, drop, alter, truncate
+ DML Data Manipulation L 조작어
+          insert, update, delete, select
+ DCL Data Control L   제어어
+    grant, revoke, TCL(commit, rollback)
+3. Depencency 
+   xml
+   annotation이용 
+4. MVC : Model View Controller

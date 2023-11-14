@@ -1,0 +1,27 @@
+1. DOM Document Object Model
+     html
+ head               body
+    |                    |
+title css meta  h1     div     p
+                     대박   span  안녕
+2. Sping 3대
+1) DI   결합도를 느슨하게해서 upgrade용이
+    (IoC)
+2) AOP 공통업무를 별도로 개발해서 
+    일반 개발자는 업무 개발만 전념
+    - Aspect, Advice
+    - JoinPoint, PointCut
+    - Weaving
+    - Advisor = PointCut + Advice
+3) PSA 
+    Potable Service Abstraction
+    @Contoller, @Service, @Autowied,...
+    어노 테이션 사용하여 서비를 쉽게 지원
+형상관리 
+  - CVS, SVN, GIT
+  
+시험
+ - 단위 : 개별프로그램, 팀내
+ - 통합 : 전체 프로그램 연결, 팀간
+ - 시스템 : overhead(부하), fail over
+ - 인수 : 요구사항을 잘했는 지 

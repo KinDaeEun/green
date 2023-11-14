@@ -1,0 +1,62 @@
+1. 객체지향
+   객체 = 데이터(속성,attribure)+기능(operation)
+   구체적, 바로 부품 사용가능 
+ 재사용, 부품
+2. 객체지향 특징 3(4)개
+ 1) 상속 : 부모의 변수/메서드, 재사용
+     inheritence
+ 2) 다형성 : 인터페이스를 사용하여 하나의 기능을 다양하게 사용, overriding(재정의), polympphism
+ 3) 캡슐화(정보은닉), encapsulation,
+     infromation hidden
+     접근지정자(private, default, protected, public)를 사용하여 외부에서 직접 조작하는 것을 제한
+ 4) 추상화(abstraction) 특징만 관리 
+   - 객체지향
+   - 이식성(플랫폼 독립적)
+   - 가비지 컬렉션
+3. 인터페이스
+   1) 변수 public static final
+   2) 메서드 public abstract
+     %. java 1.8 default/static 구현부 있음
+   3) 클래스간의 결합도를 느슨, upgrade
+       - 양식
+       - 다중상속 지원
+ 4. 추상클래스
+     1) 최소 하나이상의 추상 메서드
+     2) 직접 객체 생성은 안되고 자식 클래스를 통하여 객체 생성해서 사용
+ 5. static 정적, 객체를 생성하지 않고
+    클래스명.메서드(), 클래스명.변수
+6. generic
+  <>속에 영문 대문자 하나사용 T,K,V,E
+  Collection/Map 등에서 같은 데이터 사용
+7. 데이터 타입
+  - 기본형(primitive) : 데이터와 저장위치
+    . 정수(byte,short,int,long)
+    . 실수(float, double)
+    . boolean(true, false)
+    . 문자 (char)
+  - 참조형 : 데이터저장과 주소가 분리
+    배열, 객체
+8. Thread process안에 실행 일의 단위
+    multi thread : 하나의 cpu에 동시에 여러 Thread가 작업
+    - 처리속도가 빠름
+  - 공통 자원 사용에 문제 발생(dead lock)
+    - 동기화(syncronized) - 메서드, 객체
+   1) Thread상속, Runnale을 구현
+   2) run메서드를 재정의
+   3) 객체생성하고 객체.start()로 사용
+9. private : 같은 클래스
+    default      "          , 같은 패키지
+    protected   "         ,  "          , 상속
+    public 모두
+10. 데이터베이스 언어(Database Language)에 대하여 말해 보세요. 
+- DDL(Data Definition Language) : CREATE, ALTER, DROP
+- DML(Data Manipulation Language) : SELECT, INSERT, DELETE, UPDATE
+- DCL(Data Control Language) : COMMIT, ROLLBACK, GRANT, REVOKE
+
+index : 책의 목차, 색인 처럼
+   단어, 단원 - 페이지(주소) 
+  - 조회할 때 속도가 빠름
+  - 입력/수정/삭제할 때 속도가 느림
+
+Transaction : 일의 처리 단위 Task
+

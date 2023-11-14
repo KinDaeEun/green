@@ -1,0 +1,49 @@
+아이티센
+
+아이티파트너스 
+1. 기본형 데이터 비교(숫자) ==
+    참조형데이터 비교(String) equals
+2. interface
+   1) 변수는 public static final 생략
+          - 모두 사용 가능, 객체생성사용, 변경불가
+       메서드는 public abstract 생략
+           - 선언부는 있지만 구현부가 없음
+       java1.8부터는 default/static 메서드는 구현부가 있음
+   2) 클래스간의 결합도를 느슨하게 하는 효과
+       다형성 구현, upgrade용이
+   3) 양식 같은 효과
+   4) 다중상속을 지원
+3. Collection
+    List : 인덱스 + 데이터
+    Set : 데이터, 중복 허용 안함
+    %. Map 키, 값
+4. design pattern
+   1) MVC
+   2) singleton
+5. join : 두개이상의 테이블의 데이터를 출력
+   inner join
+   outer join
+
+에스넷시스템
+
+성진하이텍
+
+모코엠시스
+EAI는 Enterprise Architecture Integration의 약자로 기업 애플리케이션 통합이라는 의미입니다.
+
+ESB(Enterprise Service Bus)
+비즈니스 내에서 서비스, 애플리케이션, 자원을 연결하고 통합하는 미들웨어라 할 수 있으며, 이를 통해 분산된 서비스 컴포넌트를 쉽게 통합 연동할 수 있어 신뢰성 있는 메시지 통신이 가능하다
+
+에이치알인트로
+매직소프트
+핑거
+이지케어텍
+
+stack : LIFO
+queue : FIFO
+
+디리아
+
+
+
+

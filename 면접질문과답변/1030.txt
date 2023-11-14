@@ -1,0 +1,84 @@
+와이드 티엔에스
+1. 오버로딩 : 같은 클래스, 메서드/생성자, 매개변수 갯수나 데이터형이 다른 경우, 같은 메서드나 생성자에 다양한 매개변수를 적용
+   오버라이딩 : 상속, 부모와 같은 메서드, 매개변수 갯수와 데이터형이 부모와 일치, 부모보다 접근 지정자의 범위가 같거나 크다, 다형성 구현에 사용
+2. 아마존 라이브럴리 : 프로젝트 AWS(Amazon Web Service)
+3. 객체지향 : 부품처럼 사용할 객체를 조립하는 형식
+    절차지향 : 업무를 분석해서 업무절차대로 구현
+4. MVC                             Business Model(업무처리)
+        request  Servlert    DTO          DTO   VO(Entity)
+  WB --------> Controller ---> Service ---> Dao --> DB
+                         | response
+                      Vies(jsp, html)
+5. join : 두개 이상의 테이블의 컬럼을 출력
+   inner join : 부모.pk = 자식.fk 일치하는 경우 조회 
+   outer jpin :  위 조건에서 한쪽에암 데이터 가 있는 경우도 포함
+   oracle은 부족한 곳에 +추가
+   mysql left/right outer join사용
+6. post : body, 길이 제한 없음, 데이터가 보안(노출 안됨)
+    get : head, url에 데이터 노출, 속도 빠름, 테스트에 주로 사용, 256byte를 넘을 수 없음
+7. 삼항 연산자 
+변수 값 = 조건 ? true경우:false경우;
+8. 구구단
+public class Gugu {
+	public static void main(String[] args) {
+		System.out.println("구구단");
+		for (int i = 1; i <= 9; i++) {
+			for(int j = 2; j <= 9; j++) {
+				System.out.printf("%d * %d = %d\t",j, i, i*j);
+			}
+			System.out.println();
+		}
+	}
+}
+
+SEPARTNERS
+ 2 개 이상 100 개 이하의 양의 정수 배열 ar[]의 총합을 구하시오.
+최댓값은 제외 동일한 최댓값이 여러 개 일 경우 하나만 제외
+public class Total {
+	public static void main(String[] args) {
+		// 2 개 이상 100 개 이하의 양의 정수 배열 ar[]의 총합을 구하시오.
+		// 최댓값은 제외 동일한 최댓값이 여러 개 일 경우 하나만 제외
+		for (int i = 2; i <= 100; i++) {
+			int sum = fn(i);
+			System.out.println(i+"개 합계 : "+sum);
+		}
+	}
+	private static int fn(int i) {
+		int sum = 0, max = 0;
+		int[] arr = new int[i];
+		for (int j = 0; j < i; j++) {
+			// 1부터 100사이 값
+			arr[j] = (int)(Math.random()*100) + 1;
+			sum += arr[j];
+			if (arr[j] > max) max = arr[j];
+		}
+		sum -= max;
+		return sum;
+	}
+}
+
+select * from emp where 판매금액 >= 3000;
+
+프리드 버드
+1.  공통 : 로그인 정보 저장
+   session : 서버에 정보 저장, client session id저장
+   cookie : 정보를 client에 저장, 크라이언드가 삭제 되면 
+    저장정보 없어짐 -> webStroage로 사용
+2. process : 프로그램을 수행하기 위해 메모리에 저장
+        하나의 CPU에서 동시에 process가 작업 멀티 프로세스        
+   thread : process안에 일의 수행 단위
+          하나의 CPU에 동시에 여러 thread가 작업 멀티 쓰레드
+  장점 : 속도가 빠름
+  단점 : 공동으로 사용하는 자원을 동시에 사용하면 dead lock이 발생할 수 있음
+   해결방향 : syncronized 
+3. DML 데이터 조작어 insert, update, delete, select, CRUD
+   DDL 데이터 정의어 create, drop, alter, truncate
+   DCL 데이터 제어어  grant, revoke, TCL(commit, rollback)
+
+where : 테이블에서 데이터를 추출하는 조건
+having : group함수에 대한 조건
+
+뱅크웨어 글로벌
+1. SI System Intrgration sw, hw, db, nw이지만 SW개발
+   SM System Maintence 운영(유지보수)
+   QA quality Assurance 품질 보증

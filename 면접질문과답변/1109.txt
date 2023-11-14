@@ -1,0 +1,77 @@
+1. 관계형 DB
+    table 
+      속성(attribute, field, column, 열)
+      튜플(행, row, record)
+   예 : oracle, mysql, ms sql, maria db, ....
+2. 관계(Cardinality)
+    1 : 1, 1대 다, 다대다
+3. SQL
+DDL 정의어 create, drop, alter, truncate
+DML 조작어 select, insert, update, delete CRUD
+DCL 조작어 grant, revoke, commit, rollback
+
+정규화 : 무결성을 유지하기  위해서 중복 최소화 
+
+View : 실제 데이터는 없지만 table 사용
+  - 복잡한 sql을 사용하지 않고 데이터 조회
+  - 데이터 조회 컬럼을 조정허여 보완
+
+ERD : Entity Relation Diagram
+  Cardinaty : 1:1, 1:다, 다:다
+  pk, fk
+  속성, 도메인(데이터형, 길이)
+  필수/선택
+
+Transaction 성격 : ACID
+  Atomicity : 원자성 성공/실패
+  Consistency(일관성) 성공한 유지
+  Isolation 독립성 : 작업 완료전에 다른 transaction 분리
+  Durability 지속성 완료된 데이터 영구 보관
+
+1. jsp
+   <%@ page
+
+2. 주석
+    <!--  --> 소스 보기로 볼 수 있음 html
+    //, /* */ 자바주석 스크릿틀릿에서 사용
+   <%--  --%> jsp주석
+3. 선언문 declaration <%!  ~ %>
+    멤버변수, 메서드
+4. 수행문(scriptlet) <%    ~  %>
+    자바코드
+5. EL ${변수}
+6. 내장객체 
+   자바 : 객체를 사용하려면 생성
+   jsp : 객체를 생성하지 않고 사용하는 객체
+   jsp ---> servlet변경할 때 생성하기 때문
+7. get  head url에 표시 길이 256byte
+    post body, 보안, 길이 제한 없음
+8. xml
+  <?xml version="" ?>
+  <root>
+     <element>
+           <element>값</element>
+     </element>
+      ....
+  </root>
+ <>시작 태그
+ </>끝
+ 설정 파일에서 사용
+ 값을 전달 : 최근에는 json, yml로 많이 사용
+9.  json
+   [ 
+     {속성:값, 속성:값,....}
+      ...
+   ]
+10. yml
+   속성 : 값
+   속성 : 값
+            속성 : 값
+             .....
+   ....
+11. MVC model2
+         request   Servlet      DTO              DTO        VO
+   WB --------> Controller -------> Service ----> Dao ----> DB 
+                           |
+                        View(jsp, html)
+ 

@@ -1,0 +1,76 @@
+오늘 앤 파트너스
+- 자릿수 합계
+- 배열
+
+유니온 커뮤니티 
+
+제로바코 코리아
+ - for
+
+나루아이
+
+하이퍼테크
+4. DI
+   xml사용
+   <bean id="" class="">
+	<property ref/value=""/>
+              <construct-arg value=""/>
+  </bean>
+  annotaion을 사용
+   @Autowired/@Inject
+   @Component/@Service/@Repository
+5. ERP(Enterorise Resource Planning)
+    회사 업무를 통채로 개발한 프로그램을 설치
+    회사에 맞게 수종(Customermizing)
+6. db.properties
+7. Query
+   - insert into table명 (컬럼,...) values(값,....)
+     insert into table명 values(값,....)
+   - select cilumn명, ... from table명 별칭,
+     테이블 명 별칭 where a.pk=b.fk;
+  - 두개 이상의 테이블에 컬럼을 보고 싶을 사용
+  inner join pk=fk가 일치
+  outer join 한쪽 테이블만 존재하는 것 포함
+   select * from table 명 where 테이블 조건       group by 컬럼 
+          having 그룹에 대한 조건
+   order by 컬럼/순서/별칭
+   update table명 set 컬럼=값,.... where 조건
+   delete from table명 where 조건
+10. 절차적 언어 language 업무처리하는 순서에 맞게 작성 how
+     비절차적 언어 what sql
+11. 동기식 - 작업 결과를 확인하고 다음 작업
+     비동기 -       "                없이     "
+     A ---------->   B
+동기  1-------> 안전
+           <------ ok
+         2 -------->
+             <---- error
+          1--------> 
+비동기 : 속도가 빠름
+       1----------->
+       2---------->
+       3----------->
+          <------- ok
+          <------- error
+      request   Servlet  DTO (Business) Model
+WB -------> Controller ----> Service --> Dao
+                                         ----> DB
+                       | 
+                      View(html, jsp)
+14. for, if, while, switch
+
+선도 소프트 웨어 
+  피보나찌 수열
+public class Fibbo {
+	public static void main(String[] args) {
+		int[] a =  new int[8182];
+		a[0] = 1; a[1] = 1;
+		// a[n] = a[n-1] + a[n-2]
+		// 1, 1 , 2, 3, 5, 8, 13, 21,.....
+		for (int i = 2; i < a.length; i++) {
+			a[i] = a[i-1] + a[i-2];
+		}
+		System.out.println("a[8181] : "+a[8181]);
+	}	
+}
+ 메타넷 대우 인턴 채용 면접

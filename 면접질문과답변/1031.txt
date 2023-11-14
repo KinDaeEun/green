@@ -1,0 +1,81 @@
+엠앤와이즈
+1. extends(확장) 상속 class
+   implements(구현) interface 다형성구현
+2. 공통점 : 여러개의 데이터를 담는 것
+    배열 : 데이터형 같음, 갯수가 고정, 속도가 빠름
+    List : generic을 사용하지 않으면 여러 데이터 형
+           갯수가 가변적, 융통성 있음
+3. 문자열 뒤집기
+ public class Reverse1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("문장열을 입력 하세요");
+		String str = sc.nextLine();
+		for(int i = str.length() - 1; i >= 0; i--) {
+			System.out.print(str.charAt(i));
+		}			
+		sc.close();
+	}
+}
+
+에오스와이텍즈
+온아이시스템
+소프트그램
+public class String2 {
+	public static void main(String[] args) {
+		System.out.println("문장열을 입력 하세요");
+		String str = "1111-2222-3333-4444";
+		for(int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) != '-')
+				System.out.print(str.charAt(i));
+		}			
+	}
+}
+
+메이드인트루
+- Language : java, jsp(Servlet)
+- DataBase : Oracle, MySql, 모델링(ERD작성)
+- Web : html5, css, Javascript, jQuery, Ajax, React, BootStrap, xml  
+- Tool : Eclipse, ExERD, sql Developer, mySQL WorkBench, 클라우드 ERD
+- framework : Spring, springboot, myBatis, JPA, Hibernate
+- 개발 방법론 : 정보공학 개발방법론, UML(CBD, 객체지향 개발방법론), Agile
+- 형상관리 : Git
+
+크리스피드
+public class Fibbo {
+	public static void main(String[] args) {
+		int[] a =  new int[8182];
+		a[0] = 1; a[1] = 1;
+		// a[n] = a[n-1] + a[n-2]
+		// 1, 1 , 2, 3, 5, 8, 13, 21,.....
+		for (int i = 2; i < a.length; i++) {
+			a[i] = a[i-1] + a[i-2];
+		}
+		System.out.println("a[8181] : "+a[8181]);
+	}	
+}
+
+누리인포스 임원 면접
+누리어시스템
+
+클래스 - 설계, 정의, 객체들의 특징을 모아놓은 것
+객체 - 구체적, 사용 가능한 것
+          데이터(속성 attribute) + 기능(opeartion)
+           => 멤벼변수                 method
+http : 통신 프로토콜 - tcp/ip기반의 인터넷
+
+나이스디앤알 
+2. PSA(Portable Service Abstraction 서비스 추상화) : 환경의 변화와 관계없이 일관된 방식의 기술로의 접근 환경을
+
+제공하는 추상화 구조를 말한다. 이는 POJO 원칙을 철저히 따른 Spring의 기능으로 Spring에서 동작할 수 있는
+
+Library들은 POJO 원칙을 지키도록 PSA 형태의 추상화가 되어있음을 의미한다.
+잘 만든 인터페이스 하나가 열 클래스 부럽지 않다. PSA를 '잘 만든 인터페이스'라고도 한다.
+PSA가 적용된 코드는 나의 코드가 바뀌지 않고, 다른 기술로 간편하게 바꿀 수 있도록 확장성이 좋고
+기술에 특화되어 있지 않는 코드를 의미한다.
+Spring은 Spring Web MVC, Spring Transaction, Spring Cache 등 다양한 PSA를 제공한다.
+
+ 퓨처젠
+
+
+
